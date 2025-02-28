@@ -1,0 +1,13 @@
+header {
+  position: static;
+  width: 100%;
+  top: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  background-color: red;
+}
+
+h1 {
+  margin: 0;
+}
