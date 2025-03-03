@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>formの練習</title>
+  <meta name="discript" content="formの練習です">
+  <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+  <h1>好きなサッカークラブアンケート</h1>
+
+  <form name="ligueName">
+    <label>氏名</label>
+    <input type="text" placeholder="名前を入力してください">
+    <br>
+
+    <label>男性</label><input type="radio" name="gender"></radio>
+    <label>女性</label><input type="radio" name="gender"></radio>
+    <label>その他</label><input type="radio" name="gender"></radio>
+    <br>
+
+    <label>年齢</label>
+    <select>
+      <option>10代以下</option>
+      <option>20代</option>
+      <option>30代</option>
+      <option>40代以上</option>
+    </select>
+    <br>
+
+    <label>リーグ</label>
+    <select id="ligue">
+      <option value="premier">プレミアリーグ</option>
+      <option value="liga">ラ・リーガ</option>
+      <option value="serie">セリエA</option>
+      <option value="bundes">ブンデスリーガ</option>
+      <option value="ligue1">リーグ・アン</option>
+      <option value="j">Jリーグ</option>
+      <option value="etc">その他</option>
+    </select>
+    <br>
+
+    <div id="clubName">
+      <div id="premier">
+        <label >プレミアリーグで好きなクラブ</label>
+        <input type="text">
+      </div>
+
+      <div id="liga">
+        <label >ラ・リーガで好きなクラブ</label>
+        <input type="text">
+      </div>
+
+      <div id="serie">
+        <label >セリエAで好きなクラブ</label>
+        <input type="text">
+      </div>
+
+      <div id="bundes">
+        <label >ブンデスリーガで好きなクラブ</label>
+        <input type="text">
+      </div>
+
+      <div id="ligue1">
+        <label >リーグ・アンで好きなクラブ</label>
+        <input type="text">
+      </div>
+
+      <div id="j">
+        <label >Jリーグで好きなクラブ</label>
+        <input type="text">
+      </div>
+
+      <div id="etc">
+        <label>好きなリーグとクラブ</label>
+        <input type="text" placeholder="好きなリーグ">
+        <input type="text" placeholder="好きなクラブ">
+      </div>
+    </div>
+  
+    <br>
+
+    <input type="reset" value="リセット" id="reset">
+    <input type="button" value="次へ" id="checkBtn">
+    <a href="#">リセット</a>
+  </form>
+  <script src="form.js"></script>
+</body>
+</html>

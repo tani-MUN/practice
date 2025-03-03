@@ -1,0 +1,7 @@
+#premier , #liga , #serie , #bundes , #ligue1 , #j , #etc {
+  display: none;
+}
+
+#checkBtn {
+  display: inline-block;
+}
